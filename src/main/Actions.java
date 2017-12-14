@@ -1,14 +1,27 @@
-package main;
+package IIR;
 
 public class Actions {
-public int getId() {
-		return id;
-	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
-
+//Create variables
 int id;
+String Description;
+
+
+//Generate Getters and Setters
+public int getActionId() {
+	return id;
+}
+
+public void setActionId(int id) {
+	this.id = id;
+}
+
+public String getDescription() {
+	return Description;
+}
+
+public void setDescription(String description) {
+	Description = description;
+}
 
 }
