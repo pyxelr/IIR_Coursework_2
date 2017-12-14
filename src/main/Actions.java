@@ -1,4 +1,4 @@
-package IIR;
+package main;
 
 public class Actions {
 
@@ -7,7 +7,7 @@ int id;
 String Description;
 
 
-//Generate Getters and Setters
+//Generate Getters and Setters for "getActionId"
 public int getActionId() {
 	return id;
 }
@@ -16,6 +16,7 @@ public void setActionId(int id) {
 	this.id = id;
 }
 
+//Generate Getters and Setters for "Description"
 public String getDescription() {
 	return Description;
 }

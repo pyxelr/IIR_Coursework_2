@@ -1,4 +1,4 @@
-package IIR;
+package main;
 
 public class Rules {
 	

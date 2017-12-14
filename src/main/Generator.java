@@ -1,4 +1,4 @@
-package IIR;
+package main;
 // import resizable-array implementation of the LIST interface
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ public static void main(String[] args) {
 	  
 		ArrayList<Rules> listofRules = new ArrayList<Rules>();
 		// Create 5000 rules
-	for (int i=0; i<50; i++) {
+	for (int i=0; i<5000; i++) {
 		Rules rule=new Rules();
 		Events event=new Events();
 		ArrayList<Actions> actionlist = new ArrayList<Actions>();
@@ -23,7 +23,7 @@ public static void main(String[] args) {
 		rule.setEvent(event);
 		listofRules.add(rule);
 			
-		// Generate actions <with id in range 1 to 20>
+		// Generate actions <with id in range 1 to 5>
 		for(int j=0; j<event.getNumberofactions(); j++) {
 				
 			Actions action = new Actions();
@@ -47,7 +47,7 @@ public static void main(String[] args) {
 	        	 action.setDescription("Call the police");
 		         break;    
 	         default :
-	            System.out.println("Invalid grade");
+	            System.out.println("Default action");
 	      
 			}
 		
